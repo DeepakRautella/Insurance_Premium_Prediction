@@ -1,0 +1,2 @@
+[2022-07-11 06:54:01,407]-werkzeug-INFO- * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+[2022-07-11 06:54:30,676]-werkzeug-INFO-127.0.0.1 - - [11/Jul/2022 06:54:30] "GET / HTTP/1.1" 200 -
