@@ -1,7 +1,0 @@
-gunicorn
-pandas
-numpy
-flask
-sklearn
-pyYAML
--e .

@@ -1,8 +1,0 @@
-LICENSE
-README.md
-setup.py
-Insurace_premium_prediction.egg-info/PKG-INFO
-Insurace_premium_prediction.egg-info/SOURCES.txt
-Insurace_premium_prediction.egg-info/dependency_links.txt
-Insurace_premium_prediction.egg-info/requires.txt
-Insurace_premium_prediction.egg-info/top_level.txt
