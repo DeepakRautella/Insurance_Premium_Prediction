@@ -1,3 +1,0 @@
-[2022-07-11 07:11:44,577]-werkzeug-INFO- * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
-[2022-07-11 07:12:34,054]-root-INFO-testing logging and exception
-[2022-07-11 07:12:34,054]-werkzeug-INFO-127.0.0.1 - - [11/Jul/2022 07:12:34] "GET / HTTP/1.1" 200 -
