@@ -1,0 +1,12 @@
+[2022-07-11 06:33:42,784] - werkzeug  -  * Debugger is active!
+[2022-07-11 06:33:42,808] - werkzeug  -  * Debugger PIN: 677-724-518
+[2022-07-11 06:33:51,308] - werkzeug  - 127.0.0.1 - - [11/Jul/2022 06:33:51] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2022-07-11 06:33:51,364] - werkzeug  - 127.0.0.1 - - [11/Jul/2022 06:33:51] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2022-07-11 06:33:51,372] - werkzeug  - 127.0.0.1 - - [11/Jul/2022 06:33:51] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2022-07-11 06:33:51,588] - werkzeug  - 127.0.0.1 - - [11/Jul/2022 06:33:51] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2022-07-11 06:33:51,652] - werkzeug  - 127.0.0.1 - - [11/Jul/2022 06:33:51] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2022-07-11 06:33:53,470] - werkzeug  - 127.0.0.1 - - [11/Jul/2022 06:33:53] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2022-07-11 06:33:53,510] - werkzeug  - 127.0.0.1 - - [11/Jul/2022 06:33:53] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2022-07-11 06:33:53,518] - werkzeug  - 127.0.0.1 - - [11/Jul/2022 06:33:53] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2022-07-11 06:33:53,702] - werkzeug  - 127.0.0.1 - - [11/Jul/2022 06:33:53] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2022-07-11 06:33:53,758] - werkzeug  - 127.0.0.1 - - [11/Jul/2022 06:33:53] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
