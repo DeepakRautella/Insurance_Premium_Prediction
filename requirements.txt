@@ -8,4 +8,6 @@ ipykernel
 evidently
 dill
 matplotlib
+pytest
+xgboost
 -e .
