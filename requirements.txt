@@ -5,4 +5,7 @@ flask
 sklearn
 pyYAML
 ipykernel
+evidently
+dill
+matplotlib
 -e .
