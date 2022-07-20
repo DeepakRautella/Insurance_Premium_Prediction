@@ -87,11 +87,11 @@ class TrainingTesting:
 
             if index==3:
                 self.param_grid={
-                            'min_samples_leaf':[1,3,7],
-                            'max_depth': [1,2,3,4],
-                            'min_samples_split':[4,5,6],
-                            'random_state': range(100,500,50),
-                            'alpha': [0.1,0.2,0.9],            
+                            'min_samples_leaf':[3,7],
+                            'max_depth': [1,2,3],
+                            'min_samples_split':[3,4],
+                            'random_state': range(100,500,100),
+                            'alpha': [0.1,0.9],            
                             }
                 self.model=model_dict['gradient_booster']
 
