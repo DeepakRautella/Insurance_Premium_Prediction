@@ -3,10 +3,9 @@ from typing import List
 
 #Declaring variables from setup functions
 PROJECT_NAME="Insurace_premium_prediction"
-VERSION="0.0.1"
+VERSION="0.0.3"
 AUTHOR="DEEPAK RAUTELLA"
 DESCRIPTION="This is my first self made project"
-PACKAGES=["InsurancePremiumPrediction"]
 REQUIREMENT_FILE_NAME="requirements.txt"
 
 HYPEN_E_DOT="-e ."
@@ -31,6 +30,6 @@ name=PROJECT_NAME,
 version=VERSION,
 author=AUTHOR,
 description=DESCRIPTION,
-packages=PACKAGES,
+packages=find_packages(),
 install_requires=get_requirements_list()
 )
