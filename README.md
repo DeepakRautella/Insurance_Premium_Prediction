@@ -28,3 +28,30 @@ Heroku Deployment
 https://insurance--prediction.herokuapp.com/
 
 ## Web Inerface :
+![alt text](https://github.com/DeepakRautella/Insurance_Premium_Prediction/blob/main/images/home.png)
+
+![alt text](https://github.com/DeepakRautella/Insurance_Premium_Prediction/blob/main/images/trained.png)
+
+![alt text](https://github.com/DeepakRautella/Insurance_Premium_Prediction/blob/main/images/experiment.png)
+
+![alt text](https://github.com/DeepakRautella/Insurance_Premium_Prediction/blob/main/images/predict.png)
+
+![alt text](https://github.com/DeepakRautella/Insurance_Premium_Prediction/blob/main/images/log.png)
+
+![alt text](https://github.com/DeepakRautella/Insurance_Premium_Prediction/blob/main/images/artifact.png)
+
+## Libraries used :
+    1) Pandas
+    2) Numpy
+    3) Matplotlib, Seaborn, Plotly
+    4) Scikit-Learn
+    5) Flask
+    6) HTML
+    7) CSS
+
+
+## Technical Aspects :
+    1) Python 
+    2) Front-end : HTML, CSS
+    3) Back-end : Flask
+    4) Deployment : Heruko
