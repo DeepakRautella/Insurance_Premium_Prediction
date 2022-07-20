@@ -4,10 +4,8 @@ numpy
 flask
 sklearn
 pyYAML
-ipykernel
 evidently
 dill
 matplotlib
 pytest
-xgboost
 -e .
