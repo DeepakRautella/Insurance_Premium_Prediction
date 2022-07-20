@@ -39,8 +39,7 @@ class DataTransformation:
             num_pipeline=Pipeline(steps=[('imputer',SimpleImputer(strategy='most_frequent')),
                                         ('standard',StandardScaler())])
             cat_pipeline=Pipeline(steps=[('imputer',SimpleImputer(strategy='most_frequent')),
-                                        ('onehotencoding',OneHotEncoder()),
-                                        ('standard',StandardScaler(with_mean=False))])
+                                        ('onehotencoding',OneHotEncoder())])
 
             preprocessing_obj=ColumnTransformer(transformers=[('numerical_pipeline',num_pipeline,numerical_columns),
                                                 ('categorical_pipeline',cat_pipeline,categorical_columns)]
