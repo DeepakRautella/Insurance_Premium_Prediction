@@ -173,6 +173,8 @@ class ModelTrainer:
    
     def initiate_model_trainer(self)-> ModelTrainerArtifact:
         try:
+            logging.info(f"{'>>'*10} Model Trainer Log Started {'<<'*10}")
+            
             logging.info(f"Loading transformed training dataset .")
             transformed_train_file_path=self.data_transformation_artifact.transformed_train_file_path
             train_array=load_numpy_array_data(file_path=transformed_train_file_path)

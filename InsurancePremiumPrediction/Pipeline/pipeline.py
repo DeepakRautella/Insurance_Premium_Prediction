@@ -16,6 +16,7 @@ from InsurancePremiumPrediction.component.data_transformation import DataTransfo
 from InsurancePremiumPrediction.component.model_trainer import ModelTrainer
 from InsurancePremiumPrediction.component.model_evaluation import ModelEvaluation
 from InsurancePremiumPrediction.component.model_pusher import ModelPusher
+from InsurancePremiumPrediction.constant import *
 import os, sys
 from collections import namedtuple
 from datetime import datetime
@@ -29,11 +30,9 @@ Experiment = namedtuple("Experiment", ["experiment_id", "initialization_timestam
 
 
 
-
 class Pipeline(Thread):
     experiment: Experiment = Experiment(*([None] * 11))
     experiment_file_path = None
-
     def __init__(self, config: Configuration ) -> None:
         try:
             os.makedirs(config.training_pipeline_config.artifact_dir, exist_ok=True)

@@ -13,6 +13,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler,OneHotEncoder
 import pandas as pd
 import numpy as np
+
 class DataTransformation:
 
     def __init__(self,data_ingestion_artifact:DataIngestionArtifact,
