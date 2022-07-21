@@ -1,6 +1,5 @@
 from flask import Flask, request
 import sys
-
 import pip
 from InsurancePremiumPrediction.util.util import read_yaml_file, write_yaml_file
 from matplotlib.style import context
@@ -20,10 +19,11 @@ ROOT_DIR = os.getcwd()
 LOG_FOLDER_NAME = "logs"
 PIPELINE_FOLDER_NAME = "InsurancePremiumPrediction"
 SAVED_MODELS_DIR_NAME = "saved_models"
+CONFIG_FILE_PATH = os.path.join(ROOT_DIR, CONFIG_DIR, "config.yaml")
 LOG_DIR = os.path.join(ROOT_DIR, LOG_FOLDER_NAME)
 PIPELINE_DIR = os.path.join(ROOT_DIR, PIPELINE_FOLDER_NAME)
 MODEL_DIR = os.path.join(ROOT_DIR, SAVED_MODELS_DIR_NAME)
-
+CONFIG_FILE_PATH = os.path.join(ROOT_DIR, CONFIG_DIR, "config.yaml")
 
 from InsurancePremiumPrediction.logger import get_log_dataframe
 
@@ -75,6 +75,7 @@ def index():
 
 @app.route('/view_experiment_hist', methods=['GET', 'POST'])
 def view_experiment_history():
+    pipeline = Pipeline(config=Configuration(CONFIG_FILE_PATH))
     experiment_df = Pipeline.get_experiments_status()
     context = {
         "experiment": experiment_df.to_html(classes='table table-striped col-12')
@@ -121,6 +122,13 @@ def predict():
                                                         )
         insurance_df = Insurance_data.get_insurance_input_data_frame()
         insurance_predictor = InsurancePredictor(model_dir=MODEL_DIR)
+        folder_name = list(map(int, os.listdir(MODEL_DIR)))
+        if folder_name==[]:
+            context = {
+                        INSURANCE_DATA_KEY: Insurance_data.get_insurance_data_as_dict(),
+                        EXPENSES_VALUE_KEY: "TRAIN MODEL FIRST",
+                        }
+            return render_template('predict.html', context=context)          
         expenses = insurance_predictor.predict(insurance_df)
         logging.info(f"expenses :{float(expenses)}" )
         context = {

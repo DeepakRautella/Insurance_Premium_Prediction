@@ -64,6 +64,8 @@ class InsurancePredictor:
     def get_latest_model_path(self):
         try:
             folder_name = list(map(int, os.listdir(self.model_dir)))
+            if len(folder_name)==0:
+                return 0
             latest_model_dir = os.path.join(self.model_dir, f"{max(folder_name)}")
             file_name = os.listdir(latest_model_dir)[0]
             latest_model_path = os.path.join(latest_model_dir,file_name)

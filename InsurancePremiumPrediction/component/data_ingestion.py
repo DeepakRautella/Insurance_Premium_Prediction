@@ -1,4 +1,3 @@
-
 import zipfile
 from InsurancePremiumPrediction.logger import logging
 from InsurancePremiumPrediction.Exception import InsuranceException
@@ -6,7 +5,6 @@ from InsurancePremiumPrediction.entity.config_entity import DataIngestionConfig
 from InsurancePremiumPrediction.entity.artifact_entity import DataIngestionArtifact
 from InsurancePremiumPrediction.constant import *
 import os ,sys
-
 from six.moves import urllib
 import numpy as np
 from sklearn.model_selection import StratifiedShuffleSplit
